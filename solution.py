@@ -9,4 +9,4 @@ def solution(x: np.array, y: np.array) -> bool:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    return ks_2samp(x, y, alternative="greater").pvalue < 0.02 # Ваш ответ, True или False
+    return ks_2samp(x, y, alternative="two-sided").pvalue < 0.02 # Ваш ответ, True или False
